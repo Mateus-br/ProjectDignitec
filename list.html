@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Anúncios</title>
+  <link rel="stylesheet" href="anuncio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="name">DIGNITEc</h1>    
+    </header> 
+
+        <!--MENU HAMBURGER-->
+        <input type="checkbox" id="check">
+        <label for="check" class="check-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+    
+    <!--CONTAINER DO MENU-->
+    <nav class="side-bar">
+        <div class="container-menu">
+            <ul class="list-menu">
+               <li><a href="/sistema-anuncio/frontEnd/HTMLs/login.html  ">Login &#128274</a></li></li>
+               <li><a href="">Sobre &#x24D8 </a></li>
+               <li><a href="">Anunciar &#x0024</a></li>
+               <li><a href="">DignEconomy &#128176</a></li>
+            </ul>
+        </div>   
+
+        <input type="checkbox" id="check">
+        <label for="check" class="check-fechar">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+    
+    </nav>
+    <!--FECHAMENTO MENU HAMBURGER-->
+
+    <div class="search-container">
+        <input type="text" placeholder="Buscar">
+    </div>
+
+    <!--<div class="categorias">
+        <div>Privados</div>
+        <div>Social</div>
+    </div> -->
+
+<!--CARROSSEL DE IMAGENS-->
+
+ <div class="carrossel">
+    <div class="slides">
+      <input type="radio" name="slide" id="slide1" checked>
+      <input type="radio" name="slide" id="slide2">
+      <input type="radio" name="slide" id="slide3">
+      <input type="radio" name="slide" id="slide4">
+
+      <div class="imagens">
+        <div class="slide"><img src="/sistema-anuncio/images/ClubAtmosfera.jpg" alt="Imagem 1"></div>
+        <div class="slide"><img src="/sistema-anuncio/images/barbearia-carrossel.webp" alt="Imagem 2"></div>
+        <div class="slide"><img src="/sistema-anuncio/images/ambulante.jpg" alt="Imagem 3"></div>
+        <div class="slide"><img src="/sistema-anuncio/images/salao.webp" alt="Imagem 4"></div>
+      </div>
+
+      <!-- Navegação com bolinhas -->
+      <div class="navegacao-bolinhas">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
+
+      <!-- Setas de navegação -->
+      <div class="setas">
+        <label for="slide1" class="anterior">&#10094;</label>
+        <label for="slide2" class="proximo">&#10095;</label>
+        <label for="slide2" class="anterior">&#10094;</label>
+        <label for="slide3" class="proximo">&#10095;</label>
+        <label for="slide3" class="anterior">&#10094;</label>
+        <label for="slide4" class="proximo">&#10095;</label>
+        <label for="slide4" class="anterior">&#10094;</label>
+        <label for="slide1" class="proximo">&#10095;</label>
+      </div>
+       
+    <div id="lista-anuncios"></div>
+        
+
+    <script src="anuncio.js"></script>
+</body>
+</html>
